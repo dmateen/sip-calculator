@@ -56,7 +56,7 @@ export function ResultsChart({ data }: ResultsChartProps) {
             stroke="hsl(var(--muted-foreground))"
             fontSize={12}
             tickLine={false}
-            tickFormatter={(value) => `${(value / 100000).toFixed(0)}L`}
+            tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`}
           />
           <Tooltip content={<CustomTooltip />} />
           <Legend
